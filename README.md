@@ -23,10 +23,11 @@ This project demonstrates a basic relational database design for an e-commerce p
   - One-to-many between `Customer` and `Orders`
   - Many-to-many between `Orders` and `Product` via `Order_Details`
 - **Reports**:
-- [📅 Daily Revenue Report](scripts/reports/1-daily-revenue.md)
-- [📈 Monthly Top-Selling Products](scripts/reports/2-monthly-top-products.md)
-- [💰 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
-
+  - [📅 Daily Revenue Report](scripts/reports/1-daily-revenue.md)
+  - [📈 Monthly Top-Selling Products](scripts/reports/2-monthly-top-products.md)
+  - [💰 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
+- **Denormalization version on customer and order entities**:
+  - [🔧 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
 ---
 
 ## 💾 Tools

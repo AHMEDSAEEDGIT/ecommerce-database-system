@@ -1,4 +1,4 @@
-# 🗓️ high-value-customers
+# 💰 high-value-customers
 ## Write a SQL query to retrieve a list of customers who have placed orders totaling more than $500 in the past month ,include customer names and their total order amounts. 
 
 ```sql
@@ -12,7 +12,6 @@ WHERE O.Order_Date >= DATE_SUB(@Date, INTERVAL 1 MONTH)
 GROUP BY O.Customer_Id
 HAVING SUM(Quantity * Unit_Price) > 500
 )
-
 ```
 
 ---

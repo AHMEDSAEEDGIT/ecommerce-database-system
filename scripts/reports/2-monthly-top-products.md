@@ -1,4 +1,4 @@
-# 🗓️ monthly top-selling products
+# 📈 monthly top-selling products
 ## Write an SQL query to generate a monthly report of the top-selling products in a given month..
 
 ```sql
