@@ -27,7 +27,7 @@ This project demonstrates a basic relational database design for an e-commerce p
   - [📈 Monthly Top-Selling Products](scripts/reports/2-monthly-top-products.md)
   - [💰 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
 - **Denormalization version on customer and order entities**:
-  - [🔧 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
+  - [🔧 Customers with High Total Purchases](scripts/denormalized-tables/8.Customer_Order_Denormalized-Script.md)
 ---
 
 ## 💾 Tools
