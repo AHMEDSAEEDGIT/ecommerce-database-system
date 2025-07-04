@@ -40,3 +40,47 @@ SELECT CONCAT(C.First_Name, ' ', C.Last_Name) Customer_Name , CTE.Order_Price
 FROM Customer C 
 JOIN CTE
 ON C.Customer_Id = CTE.Customer_Id
+
+
+-- Write a SQL query to search for all products with the word "camera" in either the product name or description.
+SELECT *
+FROM PRODUCT P 
+WHERE P.Name LIKE '%camera%' OR P.DESCRIPTION LIKE '%camera%';
+
+
+-- Can you design a query to suggest popular products in the same category for the same author,
+-- excluding the Purchsed product from the recommendations
+WITH MOST_POPULAR_PRODUCTS AS (
+SELECT   OD.PRODUCT_ID,
+		P.CATEGORY_ID,
+        P.NAME ,
+		SUM(OD.QUANTITY) TOTAL_QUANTITY
+FROM ORDERS O
+JOIN ORDER_DETAILS OD 
+	ON O.ORDER_ID = OD.ORDER_ID
+JOIN PRODUCT P 
+	ON OD.PRODUCT_ID = P.PRODUCT_ID
+GROUP BY  OD.PRODUCT_ID
+ORDER BY TOTAL_QUANTITY DESC
+LIMIT 10 ),
+PURCHASED_PRODUCTS AS (
+SELECT DISTINCT  O.CUSTOMER_ID , OD.PRODUCT_ID , P.CATEGORY_ID
+FROM ORDERS O 
+JOIN ORDER_DETAILS OD 
+	ON O.ORDER_ID = OD.ORDER_ID
+JOIN PRODUCT P 
+	ON OD.PRODUCT_ID = P.PRODUCT_ID
+)
+
+SELECT * 
+FROM PURCHASED_PRODUCTS PP
+JOIN MOST_POPULAR_PRODUCTS MPP
+	ON PP.CATEGORY_ID = MPP.CATEGORY_ID
+    AND PP.PRODUCT_ID != MPP.PRODUCT_ID
+WHERE NOT EXISTS(
+    SELECT 1
+    FROM PURCHASED_PRODUCTS PP2
+    WHERE PP2.CUSTOMER_ID = PP.CUSTOMER_ID
+      AND PP2.PRODUCT_ID = MPP.PRODUCT_ID
+)
+    
