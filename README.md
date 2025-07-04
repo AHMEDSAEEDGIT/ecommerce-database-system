@@ -1,4 +1,4 @@
-# 🛒 Simple E-Commerce Database System
+# 🛒 E-Commerce Database System
 
 This project demonstrates a basic relational database design for an e-commerce platform using MySQL. It includes an ERD, schema diagram, SQL scripts to create and populate tables, sample reporting queries, and a denormalized version for performance testing.
 
