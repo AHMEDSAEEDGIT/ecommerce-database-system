@@ -26,6 +26,9 @@ This project demonstrates a basic relational database design for an e-commerce p
   - [📅 Daily Revenue Report](scripts/reports/1-daily-revenue.md)
   - [📈 Monthly Top-Selling Products](scripts/reports/2-monthly-top-products.md)
   - [💰 Customers with High Total Purchases](scripts/reports/3-high-value-customers.md)
+  - [📷 products-contains-camera-word](scripts/reports/4-products-contains-camera-word.md)
+  - [🧩 Popular products recommendations for the same category](scripts/reports/5-popular-products-recommendations.md)
+  - [📦 Categories hirarchey using recursive CTE](scripts/reports/6-display-all-categories-recursive.md)
 - **Denormalization version of entities**:
   - [🔧 version on customer and order entities ](scripts/denormalized-tables/8.Customer_Order_Denormalized-Script.md)
 ---
@@ -34,6 +37,5 @@ This project demonstrates a basic relational database design for an e-commerce p
 
 - MySQL 8.0+ (or compatible database engine)
 - SQL client or IDE (e.g., MySQL Workbench)
-
 ---
 
