@@ -30,7 +30,11 @@ This project demonstrates a basic relational database design for an e-commerce p
   - [🧩 Popular products recommendations for the same category](scripts/reports/5-popular-products-recommendations.md)
   - [📦 Categories hirarchey using recursive CTE](scripts/reports/6-display-all-categories-recursive.md)
   - [🔒 Adding lock on row and field level](scripts/reports/7-lock-field-quantity-update-by-Id.md)
-
+- **query optimizations**
+  - [📅 Index Performance Comparison in MySQL](benchmark/index-effect-examples.md)
+    - [ user info table feed and data generation using procedure](benchmark/scripts/userinfo-feed-procedure.sql)
+    - [ different indeces effect benchmark](benchmark/scripts/different-indeces-benchmark.sql)
+    - [ redundant indces benchmark](benchmark/redundant-indeces.md)
 - **Denormalization version of entities**:
   - [🔧 version on customer and order entities ](scripts/denormalized-tables/8.Customer_Order_Denormalized-Script.md)
 ---
