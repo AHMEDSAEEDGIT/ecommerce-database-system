@@ -30,11 +30,20 @@ This project demonstrates a basic relational database design for an e-commerce p
   - [🧩 Popular products recommendations for the same category](scripts/reports/5-popular-products-recommendations.md)
   - [📦 Categories hirarchey using recursive CTE](scripts/reports/6-display-all-categories-recursive.md)
   - [🔒 Adding lock on row and field level](scripts/reports/7-lock-field-quantity-update-by-Id.md)
-- **query optimizations**
+- **Optimized Reports with analysis**:
+  - [🔢 Total number of products for each category](scripts/reports/8-products-foreach-category.md)
+  - [💰 Top customers with total spendings](scripts/reports/9-customers-ordered-by-total-spendings.md)
+  - [✨ Most recent 1000 Order with customer information](scripts/reports/10-recent-1000-order-with-customer-info.md)
+  - [⏬ Products that have low stock quantity that less than 10](scripts/reports/11-products-have-low-stock-quantity.md)
+  - [💲 Revenue earned for each product ](scripts/reports/12-revenue-earned-for-each-product.md)
+  
+
+
+- **userinfo optimization**:
   - [📅 Index Performance Comparison in MySQL](benchmark/index-effect-examples.md)
-    - [ user info table feed and data generation using procedure](benchmark/scripts/userinfo-feed-procedure.sql)
-    - [ different indeces effect benchmark](benchmark/scripts/different-indeces-benchmark.sql)
-    - [ redundant indces benchmark](benchmark/redundant-indeces.md)
+  - [ user info table feed and data generation using procedure](benchmark/scripts/userinfo-feed-procedure.sql)
+  - [ different indeces effect benchmark](benchmark/scripts/different-indeces-benchmark.sql)
+  - [ redundant indces benchmark](benchmark/redundant-indeces.md)
 - **Denormalization version of entities**:
   - [🔧 version on customer and order entities ](scripts/denormalized-tables/8.Customer_Order_Denormalized-Script.md)
 ---
